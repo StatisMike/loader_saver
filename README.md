@@ -1,4 +1,4 @@
-# Resources _creepy_ user-independent handling
+# Resources _creepy_ user-independent multi-thread handling
 
 So this little mock project aims to pinpoint the issues that arise after `gdext` introduced additional
 checks to [cut off calls to `Gd` from other threads](https://github.com/godot-rust/gdext/pull/581).
@@ -220,4 +220,7 @@ Thread: 1: ResourceFormatLoader::handles_type
 # Godot Editor file browser)
 Thread: 17: ResourceFormatLoader::get_resource_type
 Thread: 17: ResourceFormatLoader::get_resource_type
+Thread: 1: ResourceFormatLoader::get_recognized_extensions
+Thread: 1: ResourceFormatLoader::get_recognized_extensions
+Segmentation fault (core dumped)
 ```
