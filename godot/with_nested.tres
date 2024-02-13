@@ -1,0 +1,6 @@
+[gd_resource type="WithNested" load_steps=2 format=3 uid="uid://cmq0pp3biwfp0"]
+
+[ext_resource type="Nested" uid="uid://ccisrlywgq2k4" path="res://nested_resource.tres" id="1_tyu6k"]
+
+[resource]
+nested = ExtResource("1_tyu6k")

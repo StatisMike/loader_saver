@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4li5pl0urcqb"]
+
+[ext_resource type="MockResource" uid="uid://ccvcaes5did3y" path="res://res1.mock" id="2_82ao1"]
+[ext_resource type="WithNested" uid="uid://cmq0pp3biwfp0" path="res://with_nested.tres" id="3_37o2o"]
+
+[node name="TestNode" type="TestNode"]
+mock = ExtResource("2_82ao1")
+nested = ExtResource("3_37o2o")
